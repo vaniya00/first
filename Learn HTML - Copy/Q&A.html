@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>پرسش و پاسخ</title>
+<link rel="stylesheet" href="CSS/Q&A.css">
+<meta charset="UTF-8">
+</head>
+<body>
+	<header class="header">
+		<div class="search-form">
+			<input type="text" placeholder="جستجو...">
+			<button>جستجو</button>
+		</div>
+		<nav class="navigation">
+			<ul>
+				<li><a href="main.html">اموزش</a></li>              <!--change index-->
+				<li><a href="tryCode/try.htm" target="_blank">اجرای کد</a></li>
+				<li><a href="shoping.html">خرید دوره</a></li>
+				<li><a href="Q&A.html">پرسش و پاسخ</a></li>
+				<li><a href="login.html" target="_blank">ثبتنام</a></li>
+				<li><a href="aboutMe.html">تماس با ما</a></li>
+			</ul>
+		</nav>
+		<h1 class="logo">طراحان سایت</h1>
+	</header>
+<div class="feed" id="feed">
+
+<br />        
+<h1 class = "h1">پرسش و پاسخ</h1>
+
+<p class="p" style="color:black; font-size: 22px;"> در این بخش میتوانید سوال های خودتان در مورد مسائل یادگرفته شده بپرسید تا بقیه جواب شما را بدهند</p><br />
+
+<input type="name" id="name" placeholder="Your name" required><br />
+
+<input type="email" id="mail" placeholder="Your email id" required><br />
+
+<textarea id="feedback" placeholder="Write here....." required></textarea><br />
+
+<button class="submit" id="sentbtn"><i class="fa fa-send"></i>  Send</button><br />
+
+</div>
+
+
+<!---- Feedback end ---->
+
+
+<script>
+
+var name = document.getElementById("name");
+
+var mail = document.getElementById("mail");
+
+var feedback = document.getElementById("feedback");
+
+var subbtn = document.getElementById("sentbtn");
+
+var mainbox = document.getElementById("feed");
+
+
+subbtn.addEventListener("click",()=> {
+
+var name = document.getElementById("name");
+
+var mail = document.getElementById("mail");
+
+var feedback = document.getElementById("feedback");
+
+if(name.value == "") {
+
+alert("اسم خود را وارد کنید");
+return false;
+}
+
+
+else if(mail.value == "") {
+
+alert("ادرس ایمیل خود را وارد کنید");
+return false;
+}
+
+else if(feedback.value == "") {
+
+alert("یک سوال بپرسید");
+return false;
+}
+
+else {
+
+var para = document.getElementById("forinfo");
+
+var name = document.getElementById("name");
+
+var mail = document.getElementById("mail");
+
+var feedback = document.getElementById("feedback");
+
+var subbtn = document.getElementById("sentbtn");
+
+var mainbox = document.getElementById("feed");
+
+//-------------------
+
+var box = document.createElement("div");
+
+var namee = document.createElement("h4");
+
+var maill = document.createElement("h5");
+    
+var massage = document.createElement("h6");
+    
+    
+namee.innerText = name.value;
+namee.classList.add("namev");
+box.appendChild(namee);    
+    
+maill.innerText = mail.value;
+maill.classList.add("mailv");
+box.appendChild(maill);
+
+massage.innerText = feedback.value;
+massage.classList.add("msg");
+box.appendChild(massage);
+
+box.classList.add("box");
+mainbox.appendChild(box);    
+
+
+alert ("سوال شما با موفقیت ثبت شد");
+    
+document.getElementById("forinfo").style.display="none" ;
+
+document.getElementById("name").value = "" ;
+
+document.getElementById("name").style.display="none" ;
+
+document.getElementById("mail").value = "" ;
+document.getElementById("mail").style.display="none" ;
+
+document.getElementById("feedback").value = "" ;
+
+document.getElementById("feedback").style.display="none" ;
+
+document.getElementById("sentbtn").style.display="none" ;
+    
+    
+}
+
+})
+
+</script> 
+
+</body>
+</html>

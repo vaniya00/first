@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>First Website</title>
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="search-form">
+			<input type="text" placeholder="جستجو...">
+			<button>جستجو</button>
+		</div>
+		<nav class="navigation">
+			<ul>
+				<li><a href="main.html">اموزش</a></li>              <!--change index-->
+				<li><a href="tryCode/try.htm" target="_blank">اجرای کد</a></li>
+				<li><a href="shoping.html">خرید دوره</a></li>
+				<li><a href="Q&A.html">پرسش و پاسخ</a></li>
+				<li><a href="login.html" target="_blank">ثبتنام</a></li>
+				<li><a href="aboutMe.html">تماس با ما</a></li>
+			</ul>
+		</nav>
+		<h1 class="logo">طراحان سایت</h1>
+	</header>
+	<div class="sidebar">
+		<ul>
+		  <li><a href="#"></a></li>
+		  <li><a href="#"></a></li>
+		  <li><a href="#"></a></li>
+		  <li><a href="main.html">چیست؟ HTML</a></li>
+		  <li><a href="firstWebsite.html"> ساخت اولین وبسایت</a></li>
+		  <li><a href="text.html">تگ های مرتبط با متن</a></li>
+		  <li><a href="IVV.html">تگ های عکس ، ویدیو و صدا</a></li>
+		  <li><a href="div.html">ساختمان بندی سایت</a></li>
+		</ul>
+	  </div>	  
+	<main>
+		<img src = "images/firstW.jpg" class = "image" style = "padding-top: 100px;">
+		<h1 class = "h1">ساخت فایل</h1>
+		<img src = "images/file.png" style = "padding-left: 90px ;height: 320px; width: 1000px;">
+		<h1 class = "h1">تگ چیست؟</h1>
+		<p align = "right" class = "p">ما در درس قبل متوجه شدیم که اچ تی ام ال یک زبان نشانه گذاری یا برچسب گذاری متن است. معنی کلمه تگ هم به فارسی میشود برچسب. در واقع تگ ها  نشانه های دستوری از پیش تعریف شده هستند که نقش نشانه گذاری محتویات صفحات نوشته شده را بر عهده دارند و هر کدام معنا و مفهوم خاصی را به نمایش می گذارند.  که معمولا به صورت دو قسمتی به کار می روند. ( باز میشوند و بسته میشوند ) هر صفحه وب ، دارای یک تگ باز و بسته شده اچ تی ام ال است و بقیه تگ ها درون این تگ قرار دارند. </p>
+		<p align = "right" class = "p"> body و head در تگ اچ تی ام ال 2 تگ اصلی وجود دارد</p>
+		<div class="code-box">
+			<div class="code-header">
+			  <button class="copy-btn">Copy</button>
+			</div>
+		<pre class = "code">
+<code>
+&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code>
+		</pre>
+		</div>
+	<h1 class = "h1">head تگ</h1>
+	<p align = "right" class = "p">کاربرد این تگ که باز و بسته میشود ، کمی نزدیک به معنی واقعی ان است. در حقیقت این تگ در یکی از مهمترین تگ های یک وب سایت است که میتوان به ان مغز اصلی صفحه وب هم گفته شود. این تگ به صورت کلی تغییر زیادی در ظاهر سایت به وجود نمیاورد اما فایل استایل دهی به کمک این تگ به صفحه وب وصل میشود. البته اگر فایل استایل دهی هم نداشته باشید ، باز هم تگ استایل در این تگ قرار میگیرد. علاوه بر استایل دهی ، تگ های مهمی مثل تایتل و متا و لینک و ... در این تگ قرار میگیرند. در جدول زیر لیستی از تگ های گفته شده را با کاربرد انها میبینید</p>
+	<table>
+		<thead>
+		  <tr>
+			<th>کاربرد تگ</th>
+			<th>ورودی های داخل تگ</th>
+			<th>تغییرات ظاهری</th>
+			<th>وضعیت تگ</th>
+			<th>اسم تگ</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>بدون ساخت فایل جداگانه برای استایل دهی ، در فایل صفحه وب استایل دهی کنیم</td>
+			<td>----</td>
+			<td>میدهد</td>
+			<td>بسته میشود</td>
+			<td>style</td>
+		  </tr>
+		  <tr>
+			<td>برای ربط دادن فایل های دیگر مثل فونت و ایکون و ... استفاده میشود </td>
+			<td>rel-type-href</td>
+			<td>بستگی دارد</td>
+			<td>بسته نمیشود</td>
+			<td>link</td>
+		  </tr>
+		  <tr>
+			<td>میتوانیم عنوان سایت خود را که در نوار بالای صفحه وجود دارد تعیین کنیم</td>
+			<td>----</td>
+			<td>میدهد</td>
+			<td>بسته میشود</td>
+			<td>title</td>
+		  </tr>
+		  <tr>
+			<td>اضافه کردن توضیح به صفحه وب برای کمک به مرورگر ها و دیگر وب سرویس ها</td>
+			<td>name/content</td>
+			<td>میدهد</td>
+			<td>بسته نمیشود</td>
+			<td>meta</td>
+		  </tr>
+		</tbody>
+	  </table>
+	  <div class="code-box" style = "margin-top: 50px;">
+		<div class="code-header">
+		  <button class="copy-btn">Copy</button>
+		</div>
+	  <pre class = "code">
+<code>
+&lt;style> CSS &lt;/style>
+&lt;link rel="stylesheet" type="text/css" href="style.css">
+&lt;title>صفحه اصلی وبسایت &lt;/title>
+&lt;meta name="description" content="این صفحه درباره شرکت است">
+</code>
+		</pre>
+		</div>
+    </main>
+	<br>
+	<br>
+	<hr>
+	<hr>
+	<p><span style = "font-size: 14px; font-family: Segoe UI;">&nbsp;&nbsp;&nbsp;&nbsp;vaniyakashi@gmail.com</span></p>
+	<img src = "images/footer.png" width="1200px" height="230px">
+</body>
+</html>

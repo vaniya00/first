@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn HTML</title>
+    <link href="CSS/style.css" rel="stylesheet">
+<meta charset="UTF-8">
+</head>
+<body>
+	<header class="header">
+		<div class="search-form">
+			<input type="text" placeholder="جستجو...">
+			<button>جستجو</button>
+		</div>
+		<nav class="navigation">
+			<ul>
+				<li><a href="main.html">اموزش</a></li>              <!--change index-->
+				<li><a href="tryCode/try.htm" target="_blank">اجرای کد</a></li>
+				<li><a href="shoping.html">خرید دوره</a></li>
+				<li><a href="Q&A.html">پرسش و پاسخ</a></li>
+				<li><a href="login.html" target="_blank">ثبتنام</a></li>
+				<li><a href="aboutMe.html">تماس با ما</a></li>
+			</ul>
+		</nav>
+		<h1 class="logo">طراحان سایت</h1>
+	</header>
+	<div class="sidebar">
+		<ul>
+		  <li><a href="#"></a></li>
+		  <li><a href="#"></a></li>
+		  <li><a href="#"></a></li>
+		  <li><a href="main.html">چیست؟ HTML</a></li>
+		  <li><a href="firstWebsite.html"> ساخت اولین وبسایت</a></li>
+		  <li><a href="text.html">تگ های مرتبط با متن</a></li>
+		  <li><a href="IVV.html">تگ های عکس ، ویدیو و صدا</a></li>
+		  <li><a href="div.html">ساختمان بندی سایت</a></li>
+		</ul>
+	  </div>	  
+	<main>
+        <img src = "images/IVV.png" class = "image" style = "padding-top: 100px;">
+        <h1 class = "h1">اپلود عکس ها</h1>
+        <p class = "p">تگ اپلود عکس یکی از تگ هایی است که بسته نمیشود و فقط باز میشود. به عنوان ورودی هم حداقل باید ادرس یک عکس را دریافت کند . ادرس عکس میتواند یک ادرس تحت وب باشد یا ادرس یک عکس در فولدر های وب سایت. میتوان تگ اپلود عکس را در تگ لینک ( آ ) قرار داد تا با کلیک بر روی عکس به صفحه دیگری هدایت شویم. این تگ چند امکان دیگر هم برای مقدار دهی دارد که در مثال کد زیر انها را اورده ام</p>
+        <div class="code-box">
+			<div class="code-header">
+			  <button class="copy-btn">Copy</button>
+			</div>
+		<pre class = "code">
+<code>
+&lt;img src = "ادرس عکس" title = "عنوان عکس" alt = "هنگام لود نشدن عکس نمایش داده شود">
+</code>
+		</pre>
+		</div>
+    <h1 class = "h1">اپلود ویدیو</h1>
+    <p class = "p">تگ اپلود ویدیو ، برعکس تگ عکس باز و بسته میشود. به عنوان ورودی مثل تگ عکس ، حداقل باید ادرس یک ویدیو را در فولدر های وبسایت یا یک ویدیوی تحت وب دریافت کند. علاوه بر این میتوان طول و عرض ویدیو را تعیین کرد.</p>
+    <div class="code-box">
+        <div class="code-header">
+          <button class="copy-btn">Copy</button>
+        </div>
+    <pre class = "code">
+<code>
+&lt;video src="ادرس ویدیو" width="عرض" height="طول" controls>
+&lt;/video>
+</code>
+    </pre>
+    </div>
+    <p class = "p">البته حتما به پسوند فایل ها توجه کنید و در ادرس فایل نوشتن پسوند فایل را فراموش نکنید</p>
+    <h1 class = "h1">اپلود صدا</h1>
+    <p class = "p">تگ صدا مثل تگ ویدیو باز و بسته میشود. ادرس صدا را دریافت میکند و در صفحه نمایش میدهد، میتوان کنترل کرد که به محض ورود کاربر به صفحه ، صدا به صورت خودکار بخش بشود. و برای بار دوم ، باز هم تاکید میکنم که به پسوند فایلی که ادرس ان را به تگ میدهید توجه داشته باشید</p>
+    <div class="code-box">
+        <div class="code-header">
+          <button class="copy-btn">Copy</button>
+        </div>
+    <pre class = "code">
+<code>
+&lt;audio src="path/to/audio.mp3" controls>
+&lt;/audio>
+</code>
+    </pre>
+    </div>
+    </main>
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <p><span style = "font-size: 14px; font-family: Segoe UI;">&nbsp;&nbsp;&nbsp;&nbsp;vaniyakashi@gmail.com</span></p>
+    <img src = "images/footer.png" width="1200px" height="230px">
+</body>
+</html>
